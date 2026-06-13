@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- Define a versão como HTML5 -->
+
+<html lang="pt-br"> <!-- Define o idioma como Português do Brasil -->
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Otimiza conexão com Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Permite acesso cruzado a fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> <!-- Importa a fonte Inter -->
+    
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante responsividade em celulares -->
+    
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS externo -->
+    <title>DevClub Criador de Sites</title> <!-- Título da aba do navegador -->
+</head>
+
+<body>
+    <p class="etiqueta">⚡ DevClub — Gerador com Inteligência Artificial</p> <!-- Etiqueta de topo -->
+
+    <h1>
+        Crie sua Página <!-- Título principal -->
+        <br>
+        <span>com um prompt</span> <!-- Destaque visual -->
+    </h1>
+
+    <p class="subtitulo">Descreva o seu negócio e veja a IA criar uma página profissional em segundos.</p> <!-- Subtítulo explicativo -->
+
+    <div class="caixa-entrada"> <!-- Contêiner da área de input -->
+        <textarea class="texto-pagina" placeholder="Descreva seu negócio. Ex: Cafeteria, Mercado, etc."></textarea> <!-- Campo de texto para o prompt -->
+
+        <button onclick="gerarCodigo()">⚡️ Gerar</button> <!-- Botão que chama a função JS -->
+    </div>
+
+    <div class="caixa-resultado"> <!-- Área onde o resultado será injetado -->
+        <p class="bloco-codigo"></p> <!-- Espaço para o código bruto -->
+        <iframe class="bloco-site"></iframe> <!-- Espaço para visualizar o site gerado -->
+    </div>
+
+</body>
+
+<script src="scripts.js"></script> <!-- Importa a lógica JavaScript -->
+
+</html>

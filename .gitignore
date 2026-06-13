@@ -1,0 +1,7 @@
+# Arquivos de sistema do Windows
+Thumbs.db
+desktop.ini
+
+# Pastas de IDEs
+.vscode/*
+!.vscode/settings.json
